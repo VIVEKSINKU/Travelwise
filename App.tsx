@@ -2,17 +2,18 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 // import LogBox from "./components/LogBox";
 // import LogTrip from "./components/LogTrip";
-import More from "./components/more/More";
+// import More from "./components/more/More";
 // import Login from './components/Login';
 // import Signup from './components/Signup';
 // // import RecomCard from "./components/RecomCard";
 // // import Category from "./components/Category";
 // // import Footer from './components/Footer'
+import TrackTrip from "./components/TrackTrip";
 
 export default function App(){
     return(
           <SafeAreaView style={{ flex: 1 }}>
-            <More/>
+            <TrackTrip/>
           </SafeAreaView>
     )
 }

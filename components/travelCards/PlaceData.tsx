@@ -66,5 +66,15 @@ export const PlaceData: Place[] = [
         id:12,
         name:"kozhikode",//Kadalundi Bird Sanctuary
         image:require("../../assets/kozhikode.jpg")
+    },
+    {
+      id:13,
+      name:"Kadathanadan Kalari & Navarasa Kathakali Centre",
+      image:require("../../assets/katak.jpg")
+    },
+    {
+      id:14,
+      name:"Elephant Camp",
+      image:require("../../assets/elephant.jpg")
     }
 ];
