@@ -32,7 +32,7 @@ export default function LogTrip() {
                     <Text style={{ fontWeight: "bold" }}>See More</Text>
                 </View> */}
                 <Button
-                    title="Go to Details"
+                    title="See More"
                     onPress={() => navigation.navigate("More")}
       />
             </View>

@@ -1,17 +1,18 @@
-import React from "react";
+// import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 // import LogBox from "./components/LogBox";
 // import LogTrip from "./components/LogTrip";
-import More from "./components/more/More";
+// import More from "./components/more/More";
 // import Login from './components/Login';
+import Signup from './components/Signup';
 // // import RecomCard from "./components/RecomCard";
 // // import Category from "./components/Category";
 // // import Footer from './components/Footer'
 
 export default function App(){
     return(
-          <SafeAreaView>
-            <More/>
+          <SafeAreaView style={{ flex: 1 }}>
+            <Signup/>
           </SafeAreaView>
     )
 }
@@ -20,6 +21,8 @@ export default function App(){
 // import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // import { enableScreens } from "react-native-screens";
 // import { View } from "react-native";
+// import Welcome from "./components/Welcome";
+// import Login from "./components/Login";
 
 
 // enableScreens();
@@ -42,8 +45,8 @@ export default function App(){
 //     },
 //   }}
 //       >
-//         <Stack.Screen name="Home" component={LogTrip} options={{headerTransparent: true}}/>
-//         <Stack.Screen name="More" component={More} options={{title:"Back"}} />
+//         <Stack.Screen name="Home" component={Welcome} options={{headerTransparent: true}}/>
+//         <Stack.Screen name="More" component={Login} options={{title:"Back"}} />
 //       </Stack.Navigator>
 
 //     </NavigationContainer>
