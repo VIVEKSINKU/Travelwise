@@ -9,6 +9,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 // // import Category from "./components/Category";
 // // import Footer from './components/Footer'
 import TrackTrip from "./components/TrackTrip";
+// import Achiev from "./components/Achiev";
+// import Cal from "./components/Cal";
 
 export default function App(){
     return(
