@@ -34,7 +34,7 @@ export default function LogTrip() {
                 <Button
                     title="See More"
                     onPress={() => navigation.navigate("More")}
-      />
+                  />
             </View>
             <View>
                 <RecomCard/>

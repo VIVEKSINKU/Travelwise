@@ -2,15 +2,17 @@ import React,{useState} from "react";
 import {View,Text, StyleSheet,Image, TextInput,FlatList,TouchableOpacity} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {PlaceData} from "../travelCards/PlaceData"
+import { useNavigation } from "@react-navigation/native";
 
 export default function More() {
     const [search, setSearch] = useState("");
     const filteredPlaces = PlaceData.filter((place) =>
         place.name.toLowerCase().includes(search.toLowerCase())
     );
+    const navigation = useNavigation<any>();
 
     return(
-        <SafeAreaView style={{flex:1,backgroundColor:"#a3e4fbff"}}>
+        <SafeAreaView style = {styles.container}>
             <TextInput
                 style ={styles.searchBar}
                 placeholder="search places.."
@@ -32,7 +34,8 @@ export default function More() {
                     </>
                 }
                 renderItem={({item}) =>(
-                    <TouchableOpacity style ={styles.card}>
+                    <TouchableOpacity onPress={() => navigation.navigate("Add") }
+                    style ={styles.card}>
                         <Image source={item.image} style = {styles.cardImg}/>
                         <Text style = {styles.cardTitle} numberOfLines={1} ellipsizeMode="tail">{item.name}</Text>
                     </TouchableOpacity>
@@ -43,6 +46,11 @@ export default function More() {
     )
 }
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: "#a3e4fbff",
+        marginTop: -40,
+    },
     searchBar: {
         marginTop: 50,
         marginHorizontal: 20,
@@ -54,7 +62,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 4,
         paddingHorizontal: 10,
-        height: 40,
+        height: 50,
     },
    card: {
     backgroundColor: "white",

@@ -30,15 +30,17 @@ export default function LogBox() {
         <View style = {styles.inputitle2}>
             <Text>Start time</Text>
             <TextInput style = {styles.input2} 
-            placeholder="dd/mm/yyyy, --:--"
-             placeholderTextColor="#999"
+                placeholder="0.0"
+                placeholderTextColor="#999"
+                keyboardType="numeric"
             />
         </View>
         <View style = {styles.inputitle3}>
             <Text>End time</Text>
             <TextInput style = {styles.input3} 
-            placeholder="dd/mm/yyyy, --:--"
-             placeholderTextColor="#999"
+                placeholder="0.0"
+                placeholderTextColor="#999"
+                keyboardType="numeric"
             />
         </View>
         <View style = {styles.inputitle4}>
@@ -46,6 +48,7 @@ export default function LogBox() {
             <TextInput style = {styles.input4} 
             placeholder="eg: 5 km, 500 m etc.."
              placeholderTextColor="#999"
+            keyboardType="numeric"
             />
         </View>
         <View style={{marginTop:30}}>
@@ -61,7 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5f5f5',
     borderWidth: 1,
     borderColor: '#ddd',
-    borderRadius: 2,
+    borderRadius: 10,
     width: '90%',
     alignSelf: 'center',
     padding: 16,
