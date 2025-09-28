@@ -7,7 +7,7 @@ import Signup from './components/Signup';
 // // import RecomCard from "./components/RecomCard";
 // // import Category from "./components/Category";
 // // import Footer from './components/Footer'
-// import TrackTrip from "./components/TrackTrip";
+import TrackTrip from "./components/TrackTrip";
 // import Achiev from "./components/Achiev";
 import Cal from "./components/Cal";
 
@@ -25,6 +25,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { enableScreens } from "react-native-screens";
 import { View } from "react-native";
 import LogBox from "./components/LogBox";
+import {TravelMap} from "./components/map/TravelMap";
 // import Welcome from "./components/Welcome";
 // import Login from "./components/Login";
 
@@ -55,6 +56,8 @@ export default function App() {
         <Stack.Screen name="Add" component={LogBox} options={{title:"Log Trip"}} />
         <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
         <Stack.Screen name="Signup" component={Signup} options={{headerShown: false}}/>
+        <Stack.Screen name="Track" component={TrackTrip} options={{title:"Track Trip"}} />
+        {/* <Stack.Screen name="location" component={TravelMap} options={{title:"Map"}} /> */}
       </Stack.Navigator>
 
     </NavigationContainer>

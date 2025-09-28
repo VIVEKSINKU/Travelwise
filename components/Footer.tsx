@@ -18,7 +18,7 @@ export default function Footer() {
                     </TouchableOpacity>
                 </View>
                 <View style={{marginTop: -30}}>
-                    <TouchableOpacity onPress={() => navigation.navigate("Location")}>
+                    <TouchableOpacity onPress={() => navigation.navigate("location")}>
                         <Image source={require("../assets/location.png")} style={{width: 80, height: 80, borderRadius: 30, margin: 10}}/>
                     </TouchableOpacity>
                 </View>

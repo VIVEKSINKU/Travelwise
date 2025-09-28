@@ -5,7 +5,7 @@ import Achiev from "./Achiev";
 
 export default function TrackTrip() {
     return(
-        <SafeAreaView style={{backgroundColor: "#a3e4fbff", flex: 1}}>
+        <SafeAreaView style={{backgroundColor: "#a3e4fbff", flex: 1,marginTop:-50}}>
             <ScrollView>
            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 <View style = {styles.container1}>
@@ -46,8 +46,8 @@ export default function TrackTrip() {
                     <Text style={{marginLeft:27}}>Log your journey</Text>
                     <View style={{alignItems:"center", justifyContent:"center",marginTop:50}}>
                         <Image
-                            source ={require("../assets/steps.jpg")}
-                            style = {{width:90, height:80,  marginTop:20, borderRadius:50}}
+                            source ={require("../assets/cam.png")}
+                            style = {{width:90, height:80,  marginTop:20,opacity:0.5}}
                         />
                         <Text style={{textAlign:"center", fontSize:16, marginTop:20, marginBottom:20,color:"gray"}}>No recent trips logged</Text>
                     </View>

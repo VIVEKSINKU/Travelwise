@@ -5,12 +5,12 @@ import { getStorage } from "firebase/storage";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBFgzHO7B4_TYG9N6a34A8RvI3EdcO2xDA",
-  authDomain: "travelapp-df313.firebaseapp.com",
-  projectId: "travelapp-df313",
-  storageBucket: "travelapp-df313.firebasestorage.app",
-  messagingSenderId: "214643921063",
-  appId: "1:214643921063:web:9a5e3015be01e370aecb82"
+  apiKey: "AIzaSyCAmaLO9oR8AA72cKEB4bLntM1zCWXjQQk",
+  authDomain: "traveldairy-9d6b3.firebaseapp.com",
+  projectId: "traveldairy-9d6b3",
+  storageBucket: "traveldairy-9d6b3.firebasestorage.app",
+  messagingSenderId: "594855083263",
+  appId: "1:594855083263:android:a836b7443ee9ea187820ca"
 };
 
 const app = initializeApp(firebaseConfig);
